@@ -1,0 +1,123 @@
+body {
+  background-color: #fdfcf9;
+  color: #2b2b2b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+.hero {
+  position: relative;
+  background: url('https://wallpaperaccess.com/full/3014596.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-blend-mode: multiply;
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(90deg, #fdfcf9, #686c95, #fdfcf9);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: gradient-move 6s ease-in-out infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+
+
+
+
+.hero p {
+  font-size: 1.25rem;
+  z-index: 2;
+  position: relative;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.emoji-button {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+  transition: transform 0.2s ease;
+}
+
+.emoji-button:hover {
+  transform: scale(1.2);
+}
+
+.recipe-btn {
+  /* background-color: #575864; */
+  color: #533ff0;
+  transition: background-color 0.3s ease;
+  padding: 8px 25px!important;
+  border-radius: 8px;
+  font-weight: 500;
+/* text-decoration: underline; */
+}
+
+.recipe-btn:hover {
+  background-color: #37394e;
+  color: #f1f1ec;
+}
+
+footer.text-center {
+  background-color: #f1f1ec;
+  color: #333;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 20px;
+}

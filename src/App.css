@@ -1,204 +1,47 @@
-*{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.card{
-box-shadow: 1px 1px 1px rgba(244, 139, 108, 0.871)!important;
-/* border: 1px solid #ff4000; */
-}
-
-.card-content-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #f55f2d;
-  letter-spacing: 2px;
-}
-
-.emoji-button {
-  font-size: 1.3rem;
-  padding: 1.5rem 1.15rem;
-  margin: 3px;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-  .card-content-title {
-    font-size: 1rem;
-  }
-
-  .emoji-button {
-    font-size: 1.1rem;
-    padding: 0.2rem 0.4rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .card-content-title {
-    font-size: 0.95rem;
-  }
-
-  .emoji-button {
-    font-size: 1rem;
-    padding: 0.15rem 0.3rem;
-  }
-}
-
-.hero{
-  background:url('https://wallpaperaccess.com/full/3014596.jpg'),no-repeat,center;
-  /* filter: brightness(35%); */
-  /* opacity: 0.7; */
+/* Hero Section */
+/* .hero {
+  background: url('https://wallpaperaccess.com/full/3014596.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 99vh;
-  padding: 0;
-  margin-bottom: 150px !important;
   position: relative;
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 150px !important;
+  padding: 0 20px;
+  color: #f7b288;
 }
+
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.601); /* semi-transparent black overlay */
+  inset: 0;
+  background: rgba(10, 5, 2, 0.75); 
+  border-radius: 12px;
   z-index: 1;
 }
-h2{
-  font-size: 4rem;
-  font-weight: bold;
-  color: #ff4000;
-  /* text-align: center; */
-  padding: 20px;
-  z-index:200;
-  /* border-radius: 10px; */
 
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff7f50; /* coral */
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 }
-p{
+
+p {
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
   font-style: italic;
   font-weight: 400;
-  z-index: 1;
-}
-footer {
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-footer h6 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-/* MealDetails.css */
-*{
-  color: #fff;
-}
-.meal-container {
-  width: 100%;
-  margin: auto;
-  padding: 2rem 1rem;
-  background:linear-gradient(180deg,#f7460b,#ff8f6a);
-}
-
-.meal-title {
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 20px!important;
-  font-size: 3.6rem!important;
-}
-/* 
-.meal-image {
-  width: 80%;
-  border-radius: 20px;
-  object-fit:cover;
-  max-height: 400px;
-  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+  color: #f7b288;
+  max-width: 600px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 } */
-
-.meal-info {
-  margin: 1rem 0;
-  font-size: 1.2rem!important;
-  /* color: #444; */
-}
-
-.meal-section-title {
-  font-weight: 600;
-  font-size: 2.3rem!important;
-  margin-top: 3rem!important;
-  /* font-size: 1.50rem!important; */
-  /* color: #222; */
-  margin-bottom: 20px!important;
-}
-
-.meal-ingredients {
-  list-style: disc;
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  /* color: #333; */
-}
-
-.meal-instructions {
-  /* white-space: pre-line; */
-  line-height: 1.6;
-  margin-top: 0.5rem;
-  /* color: #444; */
-  text-align: justify;
-  font-weight: 300;
-  font-size: 1.1rem!important;
-}
-
-.back-button button{
-  margin-top: 2rem;
-  background-color: #fff;
-  border: 3px solid #ff4000;
-  color: tomato;
-  padding: 10px 25px;
-}
-
-@media (max-width: 576px) {
-  .meal-title {
-    font-size: 1.5rem;
-  }
-
-  .meal-image {
-    max-height: 250px;
-  }
-
-  .meal-section-title {
-    font-size: 1.1rem;
-  }
-}
-.image-wrapper {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden; /* Key to contain the zoom effect */
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-}
-
-.meal-image {
-  width: 60%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  border-radius: 20px!important;
-}
-.recipe-btn {
-  color: #fff!important;
-  background-color: #ff4000!important;
-  padding: 6px 20px!important;
-}
-.text{
-  color: #ff4000;
-  font-size: 1.2rem!important;
-}
-footer{
-  border: 1px solid #ff4000;
-}
