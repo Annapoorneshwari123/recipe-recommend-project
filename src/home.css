@@ -25,7 +25,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.001);
   z-index: 1;
   border-radius: 20px;
 }
@@ -36,7 +36,7 @@ body {
   font-weight: bold;
   z-index: 2;
   position: relative;
-  background: linear-gradient(90deg, #fdfcf9, #686c95, #fdfcf9);
+  background: linear-gradient(90deg, #f3ce93, #ff7700, #f3ce93);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,11 +57,6 @@ body {
     background-position: 0% center;
   }
 }
-
-
-
-
-
 .hero p {
   font-size: 1.25rem;
   z-index: 2;
@@ -84,8 +79,8 @@ body {
 
 .card-content-title {
   font-weight: 600;
-  font-size: 1.4rem;
-  color: #444;
+  font-size: 1.5rem!important;
+  color: #b05200;
   margin-bottom: 10px;
 }
 
@@ -110,13 +105,13 @@ body {
 }
 
 .recipe-btn:hover {
-  background-color: #37394e;
+  background-color: #914604;
   color: #f1f1ec;
 }
 
 footer.text-center {
   background-color: #f1f1ec;
-  color: #333;
+  color: #8b4000;
   font-weight: 500;
   border-radius: 12px;
   padding: 20px;
